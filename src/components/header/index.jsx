@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { HeaderContainer } from "./HeaderStyle"
+import { HeaderContainer, LogoContainer} from "./HeaderStyle";
+import Logo from "../../assets/img/logo.png"
 const Header = () => {
     return(
         <HeaderContainer>
-            <figure>
-                <Link to="/"><img alt="Logo Coffee"/></Link>
-            </figure>
+            <LogoContainer>
+                <Link to="/"><img src={Logo} alt="Logo Coffee"/><span>MintCoffee</span></Link>
+            </LogoContainer>
 
             <nav>                
                 <ul>
